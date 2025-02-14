@@ -49,3 +49,15 @@ The CategoricalCNV is a :ref:`CategoricalVariant` with exactly two constraints:
 1. A :ref:`DefiningLocationConstraint` with the `.relations` array containing only a
    `liftover_to` code.
 2. A :ref:`CopyChangeConstraint` or `CopyCountConstraint`.
+
+.. _FunctionVariant:
+
+FunctionVariant
+!!!!!!!!!!!!!!!
+
+.. include:: ../def/cat-vrs/FunctionVariant.rst
+
+The FunctionVariant is a :ref:`CategoricalVariant` with exactly two constraints:
+
+1. A :ref:`FeatureContextConstraint`.
+2. A :ref:`FunctionConstraint`.
