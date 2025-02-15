@@ -69,6 +69,7 @@ $defs:
       - $ref: "#/$defs/CopyCountConstraint"
       - $ref: "#/$defs/CopyChangeConstraint"
       - $ref: "#/$defs/FeatureContextConstraint"
+      - $ref: "#/$defs/FunctionConstraint"
     heritableProperties:
       type:
         type: string
