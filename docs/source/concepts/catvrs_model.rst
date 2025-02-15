@@ -17,15 +17,17 @@ description of a categorical variant.
 
 .. include:: ../def/cat-vrs/CategoricalVariant.rst
 
-.. _constraint:
+.. _Constraint:
 
 Constraint
 ##########
 
 The *Constraint* class is an abstract class that is the parent of all
-other constraint classes.  A constraint is a rule or set of rules that
+other constraint classes. A constraint is a rule or set of rules that
 must be satisfied for a CategoricalVariant to be considered valid.
 Constraint sub classes are only used in CategoricalVariant objects.
+
+.. include:: ../def/cat-vrs/Constraint.rst
 
 .. _DefiningAlleleConstraint:
 

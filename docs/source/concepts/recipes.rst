@@ -37,7 +37,7 @@ The ProteinSequenceConsequence is a :ref:`CategoricalVariant` with exactly one c
 1. A :ref:`DefiningAlleleConstraint` with the `.relations` array containing only a
    `translates_from` code. This constraint MUST refer to a protein variant for the `allele`.
 
-.. _categorical-cnv:
+.. _CategoricalCnv:
 
 CategoricalCnv
 !!!!!!!!!!!!!!
