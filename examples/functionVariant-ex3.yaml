@@ -1,0 +1,35 @@
+id: civic.mpid:186
+type: CategoricalVariant
+description: <-
+  ...
+name: BRCA2 loss of function variant
+constraints:
+  - type: FeatureContextConstraint
+    featureContext:
+      id: normalize.gene.hgnc:1101
+      extensions:
+        - name: symbol_status
+          value: approved
+        - name: approved_name
+          value: BRCA2 DNA repair associated
+      conceptType: Gene
+      name: BRCA2
+      mappings:
+        - coding:
+            id: hgnc:1101
+            system: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/
+            code: HGNC:1101
+          relation: exactMatch
+        - coding:
+            id: ncbigene:675
+            system: https://www.ncbi.nlm.nih.gov/gene/
+            code: 675
+          relation: exactMatch
+        - coding:
+            id: ensembl:ENSG00000139618
+            system: https://www.ensembl.org/id/
+            code: ENSG00000139618
+          relation: exactMatch
+  - type: FunctionConstraint
+    functionConsequence: SO:0002054
+    description: Function consequence for SO:0002054 (loss_of_function_variant), or loss of function.
