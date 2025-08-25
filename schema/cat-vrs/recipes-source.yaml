@@ -108,3 +108,26 @@ $defs:
                   oneOf:
                     - $ref: CopyCountConstraint
                     - $ref: CopyChangeConstraint
+
+  FunctionVariant:
+    maturity: draft
+    description: >-
+      A representation of the constraints for matching knowledge about function variants; e.g., gain-of-function or loss-of-function.
+    allOf:
+      - $ref: CategoricalVariant
+      - properties:
+          constraints:
+            description: >-
+              The constraints must contain exactly two items:
+              a FeatureContextConstraint and a FunctionConstraint.
+            minItems: 2
+            maxItems: 2
+            contains:
+              allOf:
+                - $ref: FunctionConstraint
+              anyOf:
+                - $ref: DefiningAlleleConstraint
+                - $ref: DefiningLocationConstraint
+                - $ref: FeatureContextConstraint
+        required:
+          - constraints
